@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<script>
+    //PROBLEMA
+    //Considere a lista de números abaixo:
+    // let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
+    //Faça um programa que identifique os números pares e apresente-os ao fim do programa, ordenados de forma crescente.
+
+    //ENTRADA
+
+    let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 3500, 10];
+    
+    //PROCESSAMENTO
+
+    let pares = [];
+    let inpares = [];
+    let invalidos = [];
+
+    for (let numero of listaDeNumeros) {
+        let conta = numero % 2;
+        if (conta === 0) {
+            pares.push(numero);
+        } else if (conta >= 1) {
+            inpares.push(numero);
+        } else {
+            invalido.push(numero);
+        }
+    }
+
+    //SAÍDA
+
+    alert(`Os números pares são ${pares.join(", ")}`);
+    alert(`Os números impares são ${inpares.join(", ")}`);
+    alert(`Números inválidos ${invalidos.join(", ")}`);
+
+</script>
