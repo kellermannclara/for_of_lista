@@ -26,6 +26,11 @@
         }
     }
 
+    let parescrescentes = pares;
+    let imparescrescentes = inpares;
+    pares.sort((a, b) => a - b);
+    inpares.sort ((a, b) => a - b);
+
     //SAÍDA
 
     alert(`Os números pares são ${pares.join(", ")}`);

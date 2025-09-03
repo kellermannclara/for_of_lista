@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+<script>
+    //PROBLEMA
+    //Considere a lista de números abaixo:
+    // let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    //Separe os números pares e os números ímpares em listas distintas e apresente as listas de forma crescente e forma descrescente.
+
+    //ENTRADA
+
+    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    //PROCESSAMENTO
+
+    let par = [];
+    let impar = [];
+    let invalidos = [];
+
+    for (let numero of listaDeNumeros) {
+        let conta = numero % 2;
+        if (conta === 0) {
+            par.push(numero);
+        } else if (conta >= 1) {
+            impar.push(numero);
+        } else {
+            invalido.push(numero);
+        }
+    }
+
+    let parescrescentes = par;
+    let imparescrescentes = impar;
+    par.sort((a, b) => a - b);
+    impar.sort ((a, b) => a - b);
+
+    let paresdescrentes = par;
+    let imparesdecresentes = impar;
+    par.sort((a, b) => b - a);
+    impar.sort ((a, b) => b - a);
+
+
+    //SAÍDA
+
+    alert(`Os números pares crescentes são ${parescrescentes.join(", ")}`);
+    alert(`Os números impares crescentes são ${imparescrescentes.join(", ")}`);
+    alert(`Os números pares decrescentes são ${paresdescrentes.join(", ")}`);
+    alert(`Os números impares decrescentes são ${imparesdecresentes.join(", ")}`);
+    alert(`Números inválidos ${invalidos.join(", ")}`);
+
+</script>
