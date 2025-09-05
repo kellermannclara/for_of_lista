@@ -26,15 +26,12 @@
         }
     }
 
-    let parescrescentes = par;
-    let imparescrescentes = impar;
-    par.sort((a, b) => a - b);
-    impar.sort ((a, b) => a - b);
+    
+    let parescrescentes = [...par].sort ((a, b) => a - b);
+    let imparescrescentes = [...impar].sort ((a, b) => a - b);
 
-    let paresdescrentes = par;
-    let imparesdecresentes = impar;
-    par.sort((a, b) => b - a);
-    impar.sort ((a, b) => b - a);
+    let paresdescrentes= [...par].sort ((a, b) => b - a);
+    let imparesdecresentes = [...impar].sort ((a, b) => b - a);
 
 
     //SAÍDA

@@ -7,10 +7,27 @@
 
     //ENTRADA
 
+    let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
 
     //PROCESSAMENTO
+    let nomes = [];
+    let par = [];
+    
 
+    for (let pares of listaDeItens) {
+        if (pares % 2 == 0) {
+            par.push(pares);
+    
+        } else {
+            nomes.push(pares);
+        }
 
+    }
+
+    let qunatidade = par.length
+    let qunatidadeItens= listaDeItens.length
     //SAÍDA
+
+    alert(`Os números pares são ${par}, a quanidade de pares na lista são ${qunatidade} e a qunatidade de elementos na lista original é ${qunatidadeItens}`);
 
 </script>
