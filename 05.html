@@ -14,10 +14,18 @@
     let comVogais = [];
     let semVogais = [];
 
-    for ( letra of listaDeNomes) {
-        comVogais
+    for ( vogal of listaDeNomes) {
+        if (vogal.indexOf(`A`) == 0 || vogal.indexOf(`E`) == 0 || vogal.indexOf(`I`) == 0 || vogal.indexOf(`O`) == 0 || vogal.indexOf(`U`) == 0) {
+            comVogais.push(vogal);
+        } else {
+            semVogais.push(vogal);
+        }
     }
 
+    comVogais.sort();
+
     //SAÍDA
+
+    alert(`Os nomes que que contém vogal são: ${comVogais.join(", ")}`);
 
 </script>

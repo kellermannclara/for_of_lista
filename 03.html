@@ -27,19 +27,14 @@
     }
 
     
-    let parescrescentes = [...par].sort ((a, b) => a - b);
-    let imparescrescentes = [...impar].sort ((a, b) => a - b);
-
-    let paresdescrentes= [...par].sort ((a, b) => b - a);
-    let imparesdecresentes = [...impar].sort ((a, b) => b - a);
 
 
     //SAÍDA
 
-    alert(`Os números pares crescentes são ${parescrescentes.join(", ")}`);
-    alert(`Os números impares crescentes são ${imparescrescentes.join(", ")}`);
-    alert(`Os números pares decrescentes são ${paresdescrentes.join(", ")}`);
-    alert(`Os números impares decrescentes são ${imparesdecresentes.join(", ")}`);
+    alert(`Os números pares crescentes são ${par.sort ((a, b) => a - b).join(", ")}`);
+    alert(`Os números impares crescentes são ${impar.sort ((a, b) => a - b).join(", ")}`);
+    alert(`Os números pares decrescentes são ${par.sort ((a, b) => b - a).join(", ")}`);
+    alert(`Os números impares decrescentes são ${impar.sort ((a, b) => b - a).join(", ")}`);
     alert(`Números inválidos ${invalidos.join(", ")}`);
 
 </script>
