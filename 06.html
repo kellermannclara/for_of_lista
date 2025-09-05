@@ -15,9 +15,14 @@
     let semJoao = [];
 
     for (let joao of listaDeNomes) {
-        
+        let acento = joao.replace("João", "Joao");
+        if (acento.toUpperCase().includes("JOAO") === true) {
+            comJOao.push(joao);
+        }
     }
     
     //SAÍDA
+
+    alert(`Os nomes que contém João são ${comJOao.join(", ")}`);
 
 </script>
